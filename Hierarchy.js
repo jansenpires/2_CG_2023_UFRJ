@@ -354,11 +354,11 @@ function handleKeyPress(event) {
   var d;
   let opt = document.getElementById("options");
   switch (ch) {
-    case "r":
+    case "t":
       joint.torso += 15;
       torsoMatrix.setTranslate(0, -2, 0).rotate(joint.torso, 0, 1, 0);
       break;
-    case "R":
+    case "T":
       joint.torso -= 15;
       torsoMatrix.setTranslate(0, 2, 0).rotate(joint.torso, 0, 1, 0);
       break;   
@@ -382,12 +382,12 @@ function handleKeyPress(event) {
       d = Math.max(d - 1, 20);
       rotator.setViewDistance(d);
       break;
-    case "t":
+    case "r":
       if(ang > 0) {
         ang *= -1; 
       }
       break;
-    case "T":
+    case "R":
       if(ang < 0) {
         ang *= -1; 
       }
